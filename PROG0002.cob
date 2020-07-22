@@ -45,6 +45,7 @@
       * COMPUTE: permite que as operações aritméticas sejasm combinadas em fórmulas sem restrições impostas para o campo
       * SUBTRACT: subtrai um ou mais operadores numéricos e armazena o resultado
       * DIVIDE: efetua divisão e disponibila o cosciente e, se indicado, o resto da divisão
+      * MULTIPLY: efetua a multiplicação entre as variáveis
 
       *      ADD 1 TO WRK-ACUMULADOR.
       *      DISPLAY "AC1 " WRK-ACUMULADOR.
@@ -73,8 +74,8 @@
       *        DISPLAY WRK-RESULTADO " " WRK-RESTO.
 
                MOVE 50 TO WRK-VALOR.
-               MULTIPLY 2 BY WRK-VALOR.
-               DISPLAY WRK-VALOR.
+               MULTIPLY 2 BY WRK-VALOR GIVING WRK-RESULTADO.
+               DISPLAY WRK-RESULTADO.
 
       * -- Tratativa de erro --
       *       ADD 1 TO WRK-ACUMULADOR3
