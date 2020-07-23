@@ -112,5 +112,8 @@
                DISPLAY WRK-VALORP " < " WRK-VALORN
            END-IF.
 
+           IF WRK-VALORP GREATER 5 AND WRK-VALORN LESS -10
+               DISPLAY "AMBAS AS CONDICOES SATISFEITAS"
+           END-IF.
 
             STOP RUN.
